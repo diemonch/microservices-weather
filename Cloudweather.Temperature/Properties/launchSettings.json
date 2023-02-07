@@ -11,7 +11,8 @@
   "profiles": {
     "Cloudweather.Temperature": {
       "commandName": "Project",
-      "applicationUrl": "https://localhost:3001;http://localhost:3000",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:8343",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

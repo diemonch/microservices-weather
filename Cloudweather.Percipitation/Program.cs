@@ -35,6 +35,8 @@ app.Map("/observation/{zip}", async (string zip, [FromQuery] int ? days, PercipD
 
 });
 
+//More prudent to create a Resouce model than a data model - to essentially protect the abstraction 
+
 app.MapPost("/observation", async (Percipitation percip, PercipDbContext percipdbContext) =>
 {
     percip.CreatedOn = percip.CreatedOn.ToUniversalTime();

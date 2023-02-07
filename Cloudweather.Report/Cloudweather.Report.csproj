@@ -15,9 +15,15 @@
     <None Remove="Microsoft.Extensions.Options" />
     <None Remove="Microsoft.Extensions.Logging" />
     <None Remove="DataAccess\" />
+    <None Remove="BusinessLogic\" />
+    <None Remove="Config\" />
+    <None Remove="Model\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataAccess\" />
+    <Folder Include="BusinessLogic\" />
+    <Folder Include="Config\" />
+    <Folder Include="Model\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />

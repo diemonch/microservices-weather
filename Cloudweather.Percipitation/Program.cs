@@ -35,4 +35,11 @@ app.Map("/observation/{zip}", async (string zip, [FromQuery] int ? days, PercipD
 
 });
 
+app.MapPost("/observation", async (Percipitation percip, PercipDbContext percipdbContext) =>
+{
+    percip.CreatedOn = percip.CreatedOn.ToUniversalTime();
+    await percipdbContext.AddAsync(percip);
+    await percipdbContext.SaveChangesAsync();
+});
+
 app.Run();

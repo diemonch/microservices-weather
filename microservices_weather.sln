@@ -9,7 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloudweather.Percipitation"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloudweather.Report", "Cloudweather.Report\Cloudweather.Report.csproj", "{A115FB7C-4D94-4463-8B8C-C427BD6FF503}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloudweather.Temperature", "Cloudweather.Temperature\Cloudweather.Temperature.csproj", "{993568C1-8C2D-4150-9E0E-8F96CB790786}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloudweather.Temperature", "Cloudweather.Temperature\Cloudweather.Temperature.csproj", "{D02AECB0-6C86-4433-ABD1-F6AE1CAA732C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{14581D5C-28C5-4FFB-93EE-49EBE804263A}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,9 +37,9 @@ Global
 		{A115FB7C-4D94-4463-8B8C-C427BD6FF503}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A115FB7C-4D94-4463-8B8C-C427BD6FF503}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A115FB7C-4D94-4463-8B8C-C427BD6FF503}.Release|Any CPU.Build.0 = Release|Any CPU
-		{993568C1-8C2D-4150-9E0E-8F96CB790786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{993568C1-8C2D-4150-9E0E-8F96CB790786}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{993568C1-8C2D-4150-9E0E-8F96CB790786}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{993568C1-8C2D-4150-9E0E-8F96CB790786}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D02AECB0-6C86-4433-ABD1-F6AE1CAA732C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D02AECB0-6C86-4433-ABD1-F6AE1CAA732C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D02AECB0-6C86-4433-ABD1-F6AE1CAA732C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D02AECB0-6C86-4433-ABD1-F6AE1CAA732C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

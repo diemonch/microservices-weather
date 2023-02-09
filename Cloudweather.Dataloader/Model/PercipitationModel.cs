@@ -7,7 +7,7 @@ namespace Cloudweather.Dataloader.Model
         public DateTime CreatedOn { get; set; }
         public decimal AmountInches { get; set; }
         public string WeatherType { get; set; }
-        public string ZipCode { get; set; }
+        public string Zip { get; set; }
 
         //public PercipitationModel(decimal AmountInches, string WeatherType, string ZipCode, DateTime CreatedOn)
         //{

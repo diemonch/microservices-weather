@@ -48,7 +48,7 @@ foreach (var zip in zipCodes)
     for(var day=from.Date;day<thrugh.Date;day=day.AddDays(1))
     {
         var temps = PostTemp(zip, day, temperatureHttpclient);
-        PostPercip(temps[0], zip, day, percipHttpclient);
+        PostPercip(temps[0],zip, day, percipHttpclient);
     }
 }
 
@@ -71,7 +71,7 @@ void PostPercip(int lowTemp, string zip, DateTime day, HttpClient percipHttpclie
             {
                 AmountInches = percipInches,
                 WeatherType = "Snow",
-                ZipCode = zip,
+                Zip = zip,
                 CreatedOn = day
             };
         } else
@@ -80,7 +80,7 @@ void PostPercip(int lowTemp, string zip, DateTime day, HttpClient percipHttpclie
             {
                 AmountInches = percipInches,
                 WeatherType = "Rain",
-                ZipCode = zip,
+                Zip = zip,
                 CreatedOn = day
             };
 
@@ -91,14 +91,14 @@ void PostPercip(int lowTemp, string zip, DateTime day, HttpClient percipHttpclie
         {
             AmountInches = 0,
             WeatherType = "None",
-            ZipCode = zip,
+            Zip = zip,
             CreatedOn = day
         };
     }
 
 
     var percipResponse = percipHttpclient
-        .PostAsJsonAsync("observatiion", percipitaion)
+        .PostAsJsonAsync("observation", percipitaion)
         .Result;
 
     if(percipResponse.IsSuccessStatusCode)
